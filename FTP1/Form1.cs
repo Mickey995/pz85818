@@ -338,7 +338,7 @@ namespace FTP1
             FtpWebRequest reqFTP;
             try
             {
-                // dirName = nazwa nowego katalogu.
+                // dirName =nazwa nowego katalogu.
                 reqFTP = (FtpWebRequest)FtpWebRequest.Create(new Uri("ftp://" + ftpServerIP + "/" + dirName));
                 reqFTP.Method = WebRequestMethods.Ftp.MakeDirectory;
                 reqFTP.UseBinary = true;
